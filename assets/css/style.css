@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    }
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+}
+
+.nav_links a {
+    width: 5rem;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    font-family: Lato;
+    color: white;
+}
+
+button {
+    border-color: white;
+    border-width: 3px;
+    width: 5rem;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 16px;
+    font-family: Lato;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+/* img {
+    border: 3px solid black;
+    max-width: 100pxw;
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+} */
+
+.logo {
+    width: 10vw;
+    height: 10vw;
+    cursor: pointer;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+.home_banner {
+    background-image: url("/assets/images/sauna-banner.jpg");
+    background-attachment: fixed; 
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-size: cover;        
+    height:  700px;             
+}
+
+
