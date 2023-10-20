@@ -20,7 +20,7 @@ To do:
 -Main navigation menu and structured layout
 -use principles of UX 
 -incorporate user initiate and control actions such as playing video/audio
--have at least 3 pages (landing page/form page/)
+-have at least 3 pages (landing page/form page/pricing page)
 
 -write HTML that passes W3C validator
 -write CSS code that passes Jigsaw validator

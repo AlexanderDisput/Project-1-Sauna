@@ -11,6 +11,7 @@ body {
     font-family:"Poppins", sans-serif;
     --color1: #fff;
     --color2: #181818;
+    overflow-x: hidden;
 }
 
 .nav-bar {
@@ -74,7 +75,35 @@ body {
 }
 
 
-@media (max-width: 610px) {
+
+.home-banner {
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background-image: url(/assets/images/sauna-banner.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+.banner-text {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px grey;
+}
+
+
+
+
+/* Styles for mobile screens */
+
+@media screen and (max-width: 610px) {
     .menu {
         flex-direction: column;
         align-items: center;
@@ -93,25 +122,90 @@ body {
     .menu li a {padding: 10px;}
     .open-menu, .close-menu {display: block;}
     #check:checked ~ .menu {right: 0;}
+
+    .banner-overlay {
+        display: flex;
+        background-color: black;
+        width: 80%;
+        height: 12vh;
+        margin-left: 1%;
+        position: absolute;
+        bottom: 40%;
+        padding: 20px;
+    }
+    
+    .banner-overlay h1 {
+        color: white;
+        align-self: center;
+        font-size: 2rem;
+    }
+
+    .sauna-preview-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .sauna-preview-section div {
+        width: 80vw;
+        height: 50vh;
+    }
+
+    .sauna-preview-section img {
+        max-width: 100%;
+        height: auto;
+    }
+
 }
 
-.home-banner {
-    display: flex;
-    height: 100vh;
+
+
+/* Styles for tablets and small desktops */
+
+@media only screen and (min-width: 611px) and (max-width: 1024px) {
+    
+  }
+
+
+
+
+
+
+
+
+/* Screens for larger screens (Desktop and landscape tablets */
+
+  @media only screen and (min-width: 1025px) {
+    
+  }
+
+
+
+.benefits-section {
     width: 100%;
-    background-image: url(/assets/images/sauna-banner.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    align-items: center;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
+.benefits-section div {
+    margin-bottom: 40px;
+    padding-bottom: 0;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
 
-.banner-text {
-    font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-shadow: 2px 2px grey;
+.benefits-section h2 {
+    margin: 0 0 20px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.benefits-section p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.benefits-section div:hover {
+    background-color: #00000034;
 }
