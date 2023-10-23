@@ -81,7 +81,7 @@ body {
     display: flex;
     height: 50vh;
     width: 100%;
-    background-image: url(/assets/images/warm-sauna.jpg);
+    background-image: url(/assets/images/sauna-banner.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -104,6 +104,20 @@ a {
     color: inherit;
 }
 
+.hr-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    border: 0;
+    height: 4px;
+    width: 60vw;
+    background-color: lightgrey;
+    border-radius: 2px;
+
+}
 
 /* Styles for mobile screens */
 
@@ -133,10 +147,10 @@ a {
         display: flex;
         background-color: black;
         width: 80%;
-        height: 12vh;
+        height: 17vh;
         margin-left: 1%;
         position: absolute;
-        bottom: 40%;
+        bottom: 33%;
         padding: 20px;
     }
     
@@ -151,6 +165,7 @@ a {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+        margin-bottom: 60px;
     }
 
     .sauna-preview-section-outer div {
@@ -166,6 +181,10 @@ a {
         border-radius: 10px;
         box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3),
         -7px -7px 20px rgba(255, 255, 255, 0.8);
+    }
+
+    .sauna-preview-section-outer h2 {
+        font-size: 2rem;
     }
 
     .overlay-button {
@@ -188,7 +207,140 @@ a {
         background-color: rgba(0, 0, 0, 0.9);
     }
 
+    .benefits-section-headline {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+
+    /* Pricing tiers */
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
     
+    .pricing-card {
+        flex: 1;
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s;
+    }
+    
+    .pricing-card:hover {
+        transform: scale(1.05);
+    }
+    
+    .pricing-card h2 {
+        color: black;
+        margin-bottom: 20px;
+    }
+    
+    .price {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .price span {
+        font-size: 16px;
+    }
+    
+    .pricing-card ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    .pricing-card ul li {
+        margin-bottom: 10px;
+    }
+    
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: orange;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .form-outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 5px;
+        
+    }
+
+    .form-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .form-inner input {
+        width: 80vw;
+        height: 10%;
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    
+    fieldset {
+        border: none;
+    }
+
+    fieldset div {
+        padding: 10px;
+    }
+
+
+    legend {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+
+    .map-section { 
+        width: 100vw;
+        max-width: 100vw;
+        height: auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .map-section iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    footer h3 {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
 }
 
 
@@ -210,6 +362,60 @@ a {
 
   @media only screen and (min-width: 1025px) {
     
+
+
+.pricing-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+
+.pricing-card {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+.pricing-card h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 16px;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
   }
 
 
@@ -217,7 +423,7 @@ a {
 .benefits-section {
     width: 100%;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 0 20px 0;
 }
 
 .benefits-section div {
@@ -235,4 +441,9 @@ a {
 .benefits-section p {
     margin: 0;
     line-height: 1.5;
+    padding-bottom: 40px;
 }
+
+
+
+

@@ -17,9 +17,9 @@
           <li class="logo"><a href="#"><img src="assets/images/logo-white.png" alt="Happy Sauna Logo"></a></li>
           <input type="checkbox" id="check">
           <span class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="form.html">Contact Us</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Home</a></li>
+            <li><a href="pricing.html"><i class="fa-solid fa-tags" style="color: #ffffff;"></i></i> Pricing</a></li>
+            <li><a href="form.html"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> Contact Us</a></li>
             <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
           </span>
           <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -27,8 +27,65 @@
       </nav>
     </header>
 
-    <section>
+     <!-- Fixed banner image with parallax effect and introduction text-->
+     <section class="home-banner">
+      <div class="banner-overlay">
+        <h1>Are you ready to cleanse your body?</h1>
+       
+      </div>
     </section>
+
+    <!-- Form section with nested sections to provide a better user experience  -->
+    <section>
+      <div class="form-outer">
+        <form action="#" method="post">
+          <div class="form-inner">
+            <fieldset>
+              <legend>Personal Information</legend>
+              <div>
+                  <input type="text" id="firstname" name="firstname" placeholder="First Name">
+              </div>
+              <div>
+                  <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+              </div>
+          </fieldset>
+          </div>
+          
+          <div class="form-inner">
+            <fieldset>
+              <legend>Contact Information</legend>
+              <div>
+                  <input type="email" id="email" name="email" placeholder="Email Address">
+              </div>
+              <div>
+                  <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+              </div>
+          </fieldset>
+          </div>
+          
+      
+          <input type="submit" value="Submit">
+      </form>
+      </div>
+    </section>
+
+    <!-- Adding a map for showcasing the address  -->
+    <section class="map-section">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5161851916923!2d-6.181225523384502!3d53.298201278324896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode%20Institute!5e0!3m2!1sen!2sie!4v1698064855074!5m2!1sen!2sie" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <div class="hr-container">
+      <hr>  
+  </div>
+
+    <footer>
+      <a href="https://www.instagram.com/">
+          <h3><i class="fa-brands fa-square-instagram" style="color: #000000;"></i> FOLLOW US ON INSTAGRAM</h3>
+      </a>
+      <a href="https://twitter.com/">
+          <h3><i class="fa-brands fa-square-x-twitter" style="color: #000000;"></i> FOLLOW US ON TWITTER</h3>
+      </a>
+  </footer>
 
   </body>
 </html>
