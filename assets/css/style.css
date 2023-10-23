@@ -12,6 +12,7 @@ body {
     --color1: #fff;
     --color2: #181818;
     overflow-x: hidden;
+    background-color: #FAFAFA;
 }
 
 .nav-bar {
@@ -80,7 +81,7 @@ body {
     display: flex;
     height: 50vh;
     width: 100%;
-    background-image: url(/assets/images/sauna-banner.jpg);
+    background-image: url(/assets/images/warm-sauna.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -98,7 +99,10 @@ body {
     text-shadow: 2px 2px grey;
 }
 
-
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 
 /* Styles for mobile screens */
@@ -123,6 +127,8 @@ body {
     .open-menu, .close-menu {display: block;}
     #check:checked ~ .menu {right: 0;}
 
+
+
     .banner-overlay {
         display: flex;
         background-color: black;
@@ -140,23 +146,49 @@ body {
         font-size: 2rem;
     }
 
-    .sauna-preview-section {
+    .sauna-preview-section-outer {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
     }
 
-    .sauna-preview-section div {
+    .sauna-preview-section-outer div {
         width: 80vw;
-        height: 50vh;
+        padding: 10px;
+        position: relative;
     }
 
-    .sauna-preview-section img {
+    .sauna-preview-section-outer img {
         max-width: 100%;
         height: auto;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3),
+        -7px -7px 20px rgba(255, 255, 255, 0.8);
     }
 
+    .overlay-button {
+        text-decoration: none;
+        position: absolute;
+        left: 50%;
+        bottom: 10%;
+        padding: 5px 20px;
+        background-color: rgba(255, 255, 255, 0.9);
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        transform: translateX(-50%);
+    }
+    
+
+    .overlay-button:hover {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    
 }
 
 
@@ -191,7 +223,6 @@ body {
 .benefits-section div {
     margin-bottom: 40px;
     padding-bottom: 0;
-    transition: background-color 0.3s;
     border-radius: 5px;
 }
 
@@ -204,8 +235,4 @@ body {
 .benefits-section p {
     margin: 0;
     line-height: 1.5;
-}
-
-.benefits-section div:hover {
-    background-color: #00000034;
 }
