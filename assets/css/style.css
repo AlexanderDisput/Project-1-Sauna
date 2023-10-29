@@ -90,6 +90,35 @@ body {
     margin-bottom: 100px;
 }
 
+.video {
+    display: flex;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3),
+        -7px -7px 20px rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.video-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video video {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
 
 .banner-text {
     font-size: 3rem;
@@ -121,7 +150,7 @@ hr {
 
 /* Styles for mobile screens */
 
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 767px) {
     .menu {
         flex-direction: column;
         align-items: center;
@@ -143,6 +172,19 @@ hr {
 
 
 
+    .home-banner {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        background-image: url(/assets/images/sauna-banner-mobile.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
     .banner-overlay {
         display: flex;
         background-color: black;
@@ -150,7 +192,7 @@ hr {
         height: 17vh;
         margin-left: 1%;
         position: absolute;
-        bottom: 33%;
+        bottom: 0;
         padding: 20px;
     }
     
@@ -230,7 +272,10 @@ hr {
         padding: 20px;
         border-radius: 10px;
         text-align: center;
+        box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3),
+        -7px -7px 20px rgba(255, 255, 255, 0.8);
         transition: transform 0.3s;
+        margin-bottom: 10px;
     }
     
     .pricing-card:hover {
@@ -274,14 +319,24 @@ hr {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid black;
-        border-radius: 10px;
         margin: 5px;
-        
+    }
+
+    .form-outer input[type="submit"] {
+        font-size: 1.5rem;
+        padding: 10px;
+        background-color: orange;
+        border: 0;
+        border-radius: 10px;
+        width: 50vw;
+        box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3),
+        -7px -7px 20px rgba(255, 255, 255, 0.8);
+        margin-bottom: 50px;
     }
 
     .form-inner {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding: 20px;
@@ -292,38 +347,41 @@ hr {
         height: 10%;
         font-size: 1.5rem;
         padding: 10px;
-    }
-    
-    fieldset {
-        border: none;
+        margin: 10px 0;
+        border: 0;
+        box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3),
+        -7px -7px 20px rgba(255, 255, 255, 0.8);
     }
 
-    fieldset div {
+    .form-inner label {
+        align-self: flex-start;
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+    }
+
+    .form-inner select {
+        width: 80vw;
+        font-size: 1.5rem;
         padding: 10px;
+        color: rgba(0, 0, 0, 0.54);
+        border: 0;
+        box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3),
+        -7px -7px 20px rgba(255, 255, 255, 0.8);
     }
 
-
-    legend {
-        font-size: 2rem;
-        text-align: center;
-    }
-    
-
-    .map-section { 
-        width: 100vw;
-        max-width: 100vw;
-        height: auto;
-        position: relative;
-        overflow: hidden;
+    .form-inner textarea {
+        width: 80vw;
+        font-size: 1rem;
+        padding: 10px;
+        border: 0;
+        box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3),
+        -7px -7px 20px rgba(255, 255, 255, 0.8);
     }
 
-    .map-section iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
+    .form-inner textarea::placeholder {
+        font-size: 1.5rem;
     }
+
 
 
     footer {

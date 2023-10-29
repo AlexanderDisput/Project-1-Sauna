@@ -18,8 +18,9 @@
           <input type="checkbox" id="check">
           <span class="menu">
             <li><a href="index.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Home</a></li>
-            <li><a href="pricing.html"><i class="fa-solid fa-tags" style="color: #ffffff;"></i></i> Pricing</a></li>
-            <li><a href="form.html"><i class="fa-regular fa-envelope" style="color: #ffffff;"></i> Contact Us</a></li>
+            <li><a href="pricing.html"><i class="fa-solid fa-tags" style="color: #ffffff;"></i> Pricing</a></li>
+            <li><a href="index.html#benefits-section-anchor"><i class="fa-solid fa-heart" style="color: #ffffff;"></i> Benefits</a></li>
+            <li><a href="form.html"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> Contact Us</a></li>
             <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
           </span>
           <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -38,41 +39,40 @@
     <!-- Form section with nested sections to provide a better user experience  -->
     <section>
       <div class="form-outer">
-        <form action="#" method="post">
+        <form action="https://httpbin.org/post" method="post" target="_blank">
           <div class="form-inner">
-            <fieldset>
-              <legend>Personal Information</legend>
-              <div>
-                  <input type="text" id="firstname" name="firstname" placeholder="First Name">
-              </div>
-              <div>
-                  <input type="text" id="lastname" name="lastname" placeholder="Last Name">
-              </div>
-          </fieldset>
+            <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+            <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
           </div>
           
           <div class="form-inner">
-            <fieldset>
-              <legend>Contact Information</legend>
-              <div>
-                  <input type="email" id="email" name="email" placeholder="Email Address">
-              </div>
-              <div>
-                  <input type="tel" id="phone" name="phone" placeholder="Phone Number">
-              </div>
-          </fieldset>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+          </div>
+
+          <div class="form-inner">
+            <label for="subscription">Choose your subscription:</label>
+            <select name="subscription" id="subscription" required>
+              <option value="" disabled selected>Select an option...</option>
+              <option value="basic">Basic 29 €</option>
+              <option value="premium">Premium 49 €</option>
+              <option value="deluxe">Deluxe 89 €</option>
+            </select>
+          </div>
+
+          <div class="form-inner">
+            <label for="additional_info">Tell Us More</label>
+            <textarea name="add_information" id="additional_info" cols="30" rows="10" placeholder="Is there anything that you would like us to prepare for you?"></textarea>
+          </div>
+
+          <div class="form-inner">
+            <input type="submit" value="Submit">
           </div>
           
-      
-          <input type="submit" value="Submit">
       </form>
       </div>
     </section>
 
-    <!-- Adding a map for showcasing the address  -->
-    <section class="map-section">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2384.5161851916923!2d-6.181225523384502!3d53.298201278324896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e99733f3617%3A0x7ff7202fe3dea603!2sCode%20Institute!5e0!3m2!1sen!2sie!4v1698064855074!5m2!1sen!2sie" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
 
     <div class="hr-container">
       <hr>  
