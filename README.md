@@ -1,4 +1,4 @@
-Welcome! 
+<h1>Contents</h1>
 
 Build a Sauna Website which first and foremost offers sauna services while also educating the client on the benefits of the sauna
 
