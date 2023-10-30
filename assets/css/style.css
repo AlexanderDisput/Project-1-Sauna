@@ -176,7 +176,7 @@ hr {
     .home-banner {
         display: flex;
         position: relative;
-        height: 9vh;
+        height: 93vh;
         width: 100%;
         background-image: url(/assets/images/sauna-banner-mobile.jpg);
         background-repeat: no-repeat;
@@ -994,30 +994,6 @@ button {
   }
 
 
-
-/* .benefits-section {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px 0;
-}
-
-.benefits-section div {
-    margin-bottom: 40px;
-    padding-bottom: 0;
-    border-radius: 5px;
-}
-
-.benefits-section h2 {
-    margin: 0 0 20px 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.benefits-section p {
-    margin: 0;
-    line-height: 1.5;
-    padding-bottom: 40px;
-} */
 
 
 
