@@ -82,7 +82,7 @@ body {
     display: flex;
     height: 50vh;
     width: 100%;
-    background-image: url(assets/images/sauna-banner.jpg);
+    background-image: url(../images/sauna-banner.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -178,7 +178,7 @@ hr {
         position: relative;
         height: 93vh;
         width: 100%;
-        background-image: url(assets/images/sauna-banner-mobile.jpg);
+        background-image: url(../images/sauna-banner-mobile.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -447,7 +447,7 @@ hr {
         position: relative;
         height: 92vh;
         width: 100%;
-        background-image: url(assets/images/sauna-banner.jpg);
+        background-image: url(../images/sauna-banner.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -726,7 +726,7 @@ hr {
         position: relative;
         height: 96vh;
         width: 100%;
-        background-image: url(assets/images/sauna-banner.jpg);
+        background-image: url(../images/sauna-banner.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
