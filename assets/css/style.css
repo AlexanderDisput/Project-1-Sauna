@@ -134,7 +134,6 @@ every page as well las the overlay box with text */
     border: none;
 }
 
-
 a {
     text-decoration: none;
     color: inherit;
@@ -152,8 +151,27 @@ hr {
     width: 60vw;
     background-color: lightgrey;
     border-radius: 2px;
-
 }
+
+.error-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.error-outer h1 {
+    margin-top: 80px;
+    font-size: 6rem;
+}
+
+.error-outer p {
+    text-align: center;
+    margin: 0 30px 0 30px;
+}
+
 
 /* Hides labels within form to reduce redundancy, but remain compliant with accessibility standards */
 .nolabel {
@@ -318,6 +336,15 @@ hr {
         margin-bottom: 10px;
     }
 
+    button {
+        padding: 10px 20px;
+        border: none;
+        background-color: orange;
+        color:black;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
     .benefits-section {
         width: 80%;
         margin: 0 auto;
@@ -340,15 +367,6 @@ hr {
         margin: 0;
         line-height: 1.5;
         padding-bottom: 40px;
-    }
-    
-    button {
-        padding: 10px 20px;
-        border: none;
-        background-color: orange;
-        color: white;
-        cursor: pointer;
-        border-radius: 5px;
     }
 
     .form-outer {
@@ -433,12 +451,10 @@ hr {
         font-size: 1rem;
         padding: 5px;
     }
-
 }
 
 /* Styles for tablets and small desktops */
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
-    
     .home-banner {
         display: flex;
         position: relative;
@@ -530,7 +546,7 @@ hr {
         display: flex;
         flex-direction: row;
         gap: 20px;
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
         padding: 0 20px 0;
     }
@@ -538,7 +554,6 @@ hr {
     .benefits-section div {
         margin-bottom: 40px;
         padding-bottom: 0;
-        border-radius: 5px;
     }
     
     .benefits-section h2 {
@@ -559,7 +574,6 @@ hr {
         margin-top: 60px;
         margin-bottom: 40px;
     }
-
 
     /* Pricing tiers */
     .pricing-container {
@@ -615,7 +629,7 @@ hr {
         padding: 10px 20px;
         border: none;
         background-color: orange;
-        color: white;
+        color: black;
         cursor: pointer;
         border-radius: 5px;
     }
@@ -705,7 +719,7 @@ hr {
   }
 
 /* Screens for larger screens (Desktop and landscape tablets */
-  @media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1025px) {
     
     .home-banner {
         display: flex;
@@ -760,11 +774,14 @@ hr {
 
     .sauna-preview-section-outer img {
         max-width: 100%;
+        width: 1100px;
         height: auto;
         padding: 5px;
         border-radius: 10px;
         box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3),
         -7px -7px 20px rgba(255, 255, 255, 0.8);
+        display: block;
+        margin: auto;
     }
 
     .sauna-preview-section-outer h2 {
@@ -798,7 +815,7 @@ hr {
         display: flex;
         flex-direction: row;
         gap: 20px;
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
         padding: 0 20px 0;
     }
@@ -921,85 +938,68 @@ hr {
         padding: 5px;
     }
 
-.pricing-container {
+    .pricing-container {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     gap: 10px;
-}
+    }
 
-.pricing-card {
+    .pricing-card {
     flex: 1;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s;
-}
+    }
 
-.pricing-card:hover {
-    transform: scale(1.05);
-}
+    .pricing-card:hover {
+    transform: scale(1.03);
+    }
 
-.pricing-card h2 {
+    .pricing-card h2 {
     color: #333;
     margin-bottom: 20px;
-}
+    }
 
-.price {
+    .price {
     font-size: 24px;
     margin-bottom: 20px;
-}
+    }
 
-.price span {
+    .price span {
     font-size: 16px;
-}
+    }
 
-.pricing-card ul {
+    .pricing-card ul {
     list-style-type: none;
     padding: 0;
     margin-bottom: 20px;
-}
+    }
 
-.pricing-card ul li {
+    .pricing-card ul li {
     margin-bottom: 10px;
-}
+    }
 
-button {
+    button {
     padding: 10px 20px;
     border: none;
     background-color: orange;
-    color: white;
+    color: black;
     cursor: pointer;
     border-radius: 5px;
+    }
 }
 
-
-  }
-
-
-
-
-
-
-
-  .error-outer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 40px;
+/* This query makes sure that the text does not extend too far horizontally on larger screens */
+@media only screen and (min-width: 1400px) {
+    .benefits-section {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px 0;
+    }
 }
-
-
-.error-outer h1 {
-    margin-top: 80px;
-    font-size: 6rem;
-}
-
-.error-outer p {
-    text-align: center;
-    margin: 0 30px 0 30px;
-}
-
-

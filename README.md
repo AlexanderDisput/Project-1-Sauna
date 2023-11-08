@@ -79,7 +79,6 @@ Which meta tags to include came from here: https://blog.hubspot.com/marketing/me
 
 -add testing section ot the readme with images of each page: 
 Add screenshots for wave and lighthouse for mobile and desktop 
-Add lables and hide them in the form on contact us
 add thank you page to the form 
 change action to thankyou.html - on that page display a message 
 add plenty of screenshots for each of the features 
