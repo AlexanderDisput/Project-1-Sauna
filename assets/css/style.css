@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Merriweather:wght@700&display=swap');
+  @import url('<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">');
 
 * {
     box-sizing: border-box;
@@ -19,68 +19,46 @@ li i {
     color: #ffffff;
 }
 
-/* styling required for navbar */
-.nav-bar {
-    width: 100%;
+/* Styles for the navigation bar on desktop devices */
+nav {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    list-style: none;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: sans-serif;
+    padding: 15px 30px 15px 30px;
+    background: black;
     position: relative;
-    background-color: black;
-    padding: 12px 20px;
+    }
+
+nav img {
+    width: 40px;
 }
 
-.logo img {width: 40px;}
-.menu {display: flex;}
-.menu li {padding-left: 30px;}
-.menu li a {
-    display: inline-block;
+nav a {
     text-decoration: none;
-    color: var(--color1);
-    text-align: center;
-    transition: 0.15s;
-    position: relative;
-    text-transform: uppercase;
+    color: white;
 }
 
-/* the following 2 styles change the behaviour of the link to show the active link */
-.menu li a::after, .menu li a.active::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background-color: var(--color1);
-    transition: 0.15s ease-in-out;
+nav a.active {
+    text-decoration: underline;
 }
 
-.menu li a:hover:after, .menu li a.active::after {width: 100%;}
+.list {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
 
-.open-menu, .close-menu {
-    position: absolute;
-    color: var(--color1);
-    cursor: pointer;
-    font-size: 1.5rem;
+#toggler, label {
     display: none;
 }
 
-.open-menu {
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+label i {
+    color: white;
 }
-
-.close-menu {
-    top:20px;
-    right: 20px;
-}
-
-#check {
-    display: none;
-}
-
 /* Creates the fullscreen fixed image with parallax effect on 
 every page as well las the overlay box with text */
 .home-banner {
@@ -139,6 +117,7 @@ a {
     color: inherit;
 }
 
+/* Horizontal line that resizes responsively */
 .hr-container {
     display: flex;
     justify-content: center;
@@ -149,10 +128,11 @@ hr {
     border: 0;
     height: 4px;
     width: 60vw;
-    background-color: lightgrey;
+    background-color: #d3d3d3;
     border-radius: 2px;
 }
 
+/* styles the 404 page container to resize responsively */
 .error-outer {
     display: flex;
     align-items: center;
@@ -160,7 +140,6 @@ hr {
     flex-direction: column;
     gap: 40px;
 }
-
 
 .error-outer h1 {
     margin-top: 80px;
@@ -172,7 +151,6 @@ hr {
     margin: 0 30px 0 30px;
 }
 
-
 /* Hides labels within form to reduce redundancy, but remain compliant with accessibility standards */
 .nolabel {
     display: none;
@@ -180,24 +158,30 @@ hr {
 
 /* Styles for mobile screens */
 @media screen and (max-width: 767px) {
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 80%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 2;
-        background-color: var(--color2);
-        transition: all 0.2s ease-in-out;
+/* Changing of the navigation bar to extend into box displaying the links vertically */
+    .nav img {
+        width: 50px;
     }
 
-    .menu li {margin-top: 40px;}
-    .menu li a {padding: 10px;}
-    .open-menu, .close-menu {display: block;}
-    #check:checked ~ .menu {right: 0;}
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    label{
+        display: inline-flex;
+    }
+
+    #toggler:checked~.menu{
+        max-height: 100%;
+    }
+
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
 
     .home-banner {
         display: flex;
@@ -215,7 +199,7 @@ hr {
 
     .banner-overlay {
         display: flex;
-        background-color: black;
+        background-color: #000000;
         width: 80%;
         height: 17vh;
         position: absolute;
@@ -224,7 +208,7 @@ hr {
     }
     
     .banner-overlay h1 {
-        color: white;
+        color: #ffffff;
         align-self: center;
         font-size: 2rem;
     }
@@ -239,7 +223,7 @@ hr {
     }
 
     .sauna-preview-section-outer div {
-        width: 80vw;
+        width: auto;
         padding: 10px;
         position: relative;
     }
@@ -247,6 +231,7 @@ hr {
     .sauna-preview-section-outer img {
         max-width: 100%;
         height: auto;
+        width: 360px;
         padding: 2px;
         border-radius: 10px;
         box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3),
@@ -258,6 +243,7 @@ hr {
         font-size: 2rem;
         justify-content: center;
         margin-bottom: 30px;
+        text-align: center;
     }
 
     .overlay-button {
@@ -297,8 +283,11 @@ hr {
     }
     
     .pricing-card {
-        flex: 1;
-        border: 1px solid #ddd;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        border: 1px solid #dddddd;
         padding: 20px;
         border-radius: 10px;
         text-align: center;
@@ -339,7 +328,7 @@ hr {
     button {
         padding: 10px 20px;
         border: none;
-        background-color: orange;
+        background-color: #ffa500;
         color:black;
         cursor: pointer;
         border-radius: 5px;
@@ -379,7 +368,7 @@ hr {
     .form-outer input[type="submit"] {
         font-size: 1.5rem;
         padding: 10px;
-        background-color: orange;
+        background-color: #ffa500;
         border: 0;
         border-radius: 10px;
         width: 50vw;
@@ -480,14 +469,14 @@ hr {
     }
     
     .banner-overlay h1 {
-        color: white;
+        color: #ffffff;
         align-self: center;
         font-size: 2rem;
     }
 
     
     .banner-overlay h1 {
-        color: white;
+        color: #ffffff;
         align-self: center;
         font-size: 2rem;
     }
@@ -501,18 +490,20 @@ hr {
     }
 
     .sauna-preview-section-outer div {
-        width: 80vw;
+        width: auto;
         padding: 10px;
         position: relative;
     }
 
     .sauna-preview-section-outer img {
         max-width: 100%;
+        width: 690px;
         height: auto;
         padding: 5px;
         border-radius: 10px;
         box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3),
         -7px -7px 20px rgba(255, 255, 255, 0.8);
+        margin: auto;
     }
 
     .sauna-preview-section-outer h2 {
@@ -529,8 +520,8 @@ hr {
         bottom: 10%;
         padding: 5px 20px;
         background-color: rgba(255, 255, 255, 0.9);
-        color: black;
-        border: 1px solid black;
+        color: #000000;
+        border: 1px solid #000000;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s;
@@ -582,11 +573,14 @@ hr {
         gap: 20px;
         padding: 20px;
         margin-bottom: 50px;
+        margin-right: 10%;
+        margin-left: 10%;
     }
     
     .pricing-card {
+        margin: auto;
         flex: 1;
-        border: 1px solid #ddd;
+        border: 1px solid #dddddd;
         padding: 20px;
         border-radius: 10px;
         text-align: center;
@@ -602,7 +596,7 @@ hr {
     }
     
     .pricing-card h2 {
-        color: black;
+        color: #000000;
         margin-bottom: 20px;
     }
     
@@ -628,7 +622,7 @@ hr {
     button {
         padding: 10px 20px;
         border: none;
-        background-color: orange;
+        background-color: #ffa500;
         color: black;
         cursor: pointer;
         border-radius: 5px;
@@ -644,7 +638,7 @@ hr {
     .form-outer input[type="submit"] {
         font-size: 1.5rem;
         padding: 10px;
-        background-color: orange;
+        background-color: #ffa500;
         border: 0;
         border-radius: 10px;
         width: 50vw;
@@ -737,7 +731,7 @@ hr {
 
     .banner-overlay {
         display: flex;
-        background-color: black;
+        background-color: #000000;
         width: 35%;
         height: 10vh;
         position: absolute;
@@ -746,14 +740,14 @@ hr {
     }
     
     .banner-overlay h1 {
-        color: white;
+        color: #ffffff;
         align-self: center;
         font-size: 2rem;
     }
 
     
     .banner-overlay h1 {
-        color: white;
+        color: #ffffff;
         align-self: center;
         font-size: 2rem;
     }
@@ -767,14 +761,14 @@ hr {
     }
 
     .sauna-preview-section-outer div {
-        width: 80vw;
+        width: auto;
         padding: 10px;
         position: relative;
     }
 
     .sauna-preview-section-outer img {
         max-width: 100%;
-        width: 1100px;
+        width: 800px;
         height: auto;
         padding: 5px;
         border-radius: 10px;
@@ -799,7 +793,7 @@ hr {
         padding: 5px 20px;
         background-color: rgba(255, 255, 255, 0.9);
         color: black;
-        border: 1px solid black;
+        border: 1px solid #000000;
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s;
@@ -849,8 +843,8 @@ hr {
     button {
         padding: 10px 20px;
         border: none;
-        background-color: orange;
-        color: white;
+        background-color: #ffa500;
+        color: #ffffff;
         cursor: pointer;
         border-radius: 5px;
     }
@@ -865,7 +859,7 @@ hr {
     .form-outer input[type="submit"] {
         font-size: 1.5rem;
         padding: 10px;
-        background-color: orange;
+        background-color: #ffa500;
         border: 0;
         border-radius: 10px;
         width: 30vw;
@@ -943,11 +937,15 @@ hr {
     justify-content: space-between;
     padding: 20px;
     gap: 10px;
+    margin-left: 4%;
+    margin-right: 4%;
     }
 
     .pricing-card {
-    flex: 1;
-    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 1px solid #dddddd;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -985,7 +983,7 @@ hr {
     button {
     padding: 10px 20px;
     border: none;
-    background-color: orange;
+    background-color: #ffa500;
     color: black;
     cursor: pointer;
     border-radius: 5px;
@@ -994,6 +992,22 @@ hr {
 
 /* This query makes sure that the text does not extend too far horizontally on larger screens */
 @media only screen and (min-width: 1400px) {
+    .sauna-preview-section-outer div {
+        width: 80vw;
+        padding: 10px;
+        position: relative;
+    }
+
+    .sauna-preview-section-outer img {
+        max-width: 100%;
+        height: auto;
+        width: 1090px;
+        padding: 2px;
+        border-radius: 10px;
+        box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.3),
+        -7px -7px 20px rgba(255, 255, 255, 0.8);
+    }
+
     .benefits-section {
         display: flex;
         flex-direction: row;

@@ -10,7 +10,7 @@
       content="Select your ideal sauna wellness plan and get in touch with us for a personalized health experience. 
       Our simple form makes it easy to choose and connect."
     />
-    
+
     <meta name="robots" content="index" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
@@ -27,48 +27,24 @@
     />
   </head>
   <body>
+    <!-- Navigation bar with hamburger icon -->
     <header>
       <nav>
-        <ul class="nav-bar">
-          <li class="logo">
-            <a href="#"><img src="assets/images/logo-white.webp" alt="Happy Sauna Logo"
-            /></a>
-          </li>
-          <input type="checkbox" id="check" />
-          <span class="menu">
-            <li>
-              <a href="index.html"
-                ><i class="fa-solid fa-house"></i>
-                Home</a
-              >
-            </li>
-            <li>
-              <a href="pricing.html"
-                ><i class="fa-solid fa-tags"></i>
-                Pricing</a
-              >
-            </li>
-            <li>
-              <a href="index.html#benefits-section-anchor"
-                ><i class="fa-solid fa-heart"></i>
-                Benefits</a
-              >
-            </li>
-            <li>
-              <a href="form.html" class="active"><i class="fa-solid fa-envelope"></i>
-                Contact Us</a
-              >
-            </li>
-            <label for="check" class="close-menu"
-              ><i class="fas fa-times"></i
-            ></label>
-          </span>
-          <label for="check" class="open-menu"
-            ><i class="fas fa-bars"></i
-          ></label>
-        </ul>
-      </nav>
-    </header>
+        <a href="index.html"><img src="assets/images/logo-white.webp" alt="Happy Sauna Logo"/></a>
+          <label for="toggler">
+            <i class="fa fa-bars"></i>
+          </label>
+        <input type="checkbox" id="toggler">
+          <div class="menu">
+            <ul class="list">
+              <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+              <li><a href="pricing.html"><i class="fa-solid fa-tags"></i> Pricing</a></li>
+              <li><a href="index.html#benefits-section-anchor"><i class="fa-solid fa-heart"></i> Benefits</a></li>
+              <li><a href="form.html" class="active" aria-current="page"><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     <!-- Fixed banner image with parallax effect and introduction text-->
     <section class="home-banner">
       <div class="banner-overlay">
@@ -78,7 +54,7 @@
     <!-- Form section with nested sections to provide a better user experience  -->
     <section>
       <div class="form-outer">
-        <form action="thankyou.html" method="post" target="_blank">
+        <form action="https://httpbin.org/" method="post" target="_blank">
           <div class="form-inner">
             <label for="firstname" class="nolabel">First Name</label>
             <input
@@ -140,9 +116,11 @@
         </form>
       </div>
     </section>
+    <!-- horizontal line that resizes responsively -->
     <div class="hr-container">
       <hr />
     </div>
+    <!-- Footer with social media links -->
     <footer>
       <a href="https://www.instagram.com/" target="_blank">
         <h3>

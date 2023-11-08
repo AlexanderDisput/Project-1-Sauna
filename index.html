@@ -10,7 +10,7 @@
       content="Explore the transformative mental and physical health benefits of our premium saunas. 
       Browse our gallery to discover four rejuvenating sauna experiences designed to enhance your well-being."
     />
-    
+
     <meta name="robots" content="index" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
@@ -27,53 +27,31 @@
     />
   </head>
   <body>
+    <!-- Navigation bar with hamburger icon -->
     <header>
       <nav>
-        <ul class="nav-bar">
-          <li class="logo">
-            <a href="#"
-              ><img src="assets/images/logo-white.webp" alt="Happy Sauna Logo"
-            /></a>
-          </li>
-          <input type="checkbox" id="check" />
-          <span class="menu">
-            <li>
-              <a href="index.html" class="active"
-                ><i class="fa-solid fa-house"></i> Home</a
-              >
-            </li>
-            <li>
-              <a href="pricing.html"
-                ><i class="fa-solid fa-tags"></i> Pricing</a
-              >
-            </li>
-            <li>
-              <a href="#benefits-section-anchor"
-                ><i class="fa-solid fa-heart"></i> Benefits</a
-              >
-            </li>
-            <li>
-              <a href="form.html"
-                ><i class="fa-solid fa-envelope"></i> Contact Us</a
-              >
-            </li>
-            <label for="check" class="close-menu"
-              ><i class="fas fa-times"></i
-            ></label>
-          </span>
-          <label for="check" class="open-menu"
-            ><i class="fas fa-bars"></i
-          ></label>
-        </ul>
-      </nav>
-    </header>
+        <a href="index.html"><img src="assets/images/logo-white.webp" alt="Happy Sauna Logo"/></a>
+          <label for="toggler">
+            <i class="fa fa-bars"></i>
+          </label>
+        <input type="checkbox" id="toggler">
+          <div class="menu">
+            <ul class="list">
+              <li><a href="index.html" class="active" aria-current="page"><i class="fa-solid fa-house"></i> Home</a></li>
+              <li><a href="pricing.html"><i class="fa-solid fa-tags"></i> Pricing</a></li>
+              <li><a href="#benefits-section-anchor"><i class="fa-solid fa-heart"></i> Benefits</a></li>
+              <li><a href="form.html"><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
     <!-- Fixed banner image with parallax effect and introduction text-->
     <section class="home-banner">
       <div class="banner-overlay">
         <h1>Are you ready to cleanse your body?</h1>
       </div>
     </section>
-    <!-- Sauna preview section with images -->
+    <!-- Sauna preview section with images and button that leads to the form.html page -->
     <section>
       <div class="sauna-preview-section-outer">
         <div>
@@ -117,6 +95,8 @@
         </div>
       </div>
     </section>
+    <!-- horizontal line that resizes responsively.
+    Additionally, we have an anchor link here that is linked to the "benefits" link in the navigation-->
     <div class="hr-container" id="benefits-section-anchor">
       <hr />
     </div>
@@ -202,6 +182,7 @@
     <div class="hr-container">
       <hr />
     </div>
+    <!-- Footer with social media links -->
     <footer>
       <a href="https://www.instagram.com/" target="_blank">
         <h3>

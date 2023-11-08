@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,104 +10,136 @@
       content="Immerse yourself in our sauna experience with exclusive video tours and discover 
       our pricing plans tailored for your health and relaxation. We want to provide everyone with the opportunity to choose."
     />
-    
+
     <meta name="robots" content="index" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon-32x32.webp">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/images/favicon-32x32.webp"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navigation bar with hamburger icon -->
     <header>
         <nav>
-            <ul class="nav-bar">
-                <li class="logo"><a href="#"><img src="assets/images/logo-white.webp" alt="Happy Sauna Logo"></a></li>
-                <input type="checkbox" id="check">
-                <span class="menu">
-                    <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
-                    <li><a href="pricing.html" class="active"><i class="fa-solid fa-tags"></i> Pricing</a></li>
-                    <li><a href="index.html#benefits-section-anchor"><i class="fa-solid fa-heart"></i> Benefits</a></li>
-                    <li><a href="form.html"><i class="fa-solid fa-envelope"></i> Contact Us</a>
-                    </li>
-                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-                </span>
-                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-            </ul>
-        </nav>
-    </header>
+          <a href="index.html"><img src="assets/images/logo-white.webp" alt="Happy Sauna Logo"/></a>
+            <label for="toggler">
+              <i class="fa fa-bars"></i>
+            </label>
+          <input type="checkbox" id="toggler">
+            <div class="menu">
+              <ul class="list">
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="pricing.html" class="active" aria-current="page"><i class="fa-solid fa-tags"></i> Pricing</a></li>
+                <li><a href="index.html#benefits-section-anchor"><i class="fa-solid fa-heart"></i> Benefits</a></li>
+                <li><a href="form.html"><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+    <!-- Fixed banner image with parallax effect and introduction text-->
     <section class="home-banner">
-        <div class="banner-overlay">
-            <h1>Only a healthy body can foster a healthy mind</h1>
-        </div>
+      <div class="banner-overlay">
+        <h1>Only a healthy body can foster a healthy mind</h1>
+      </div>
     </section>
+    <!-- Section showing video showcases of the saunas -->
+    <section>
     <div>
-        <div class="video-inner">
-            <div class="video">
-                <video autoplay muted controls aria-label="Video showcasing one of our luxurious saunas in the forest.">
-                    <source src="assets/images/happy-sauna-video-1.mp4">
-                </video>
-            </div>
+      <div class="video-inner">
+        <div class="video">
+          <video
+            autoplay
+            muted
+            controls
+            aria-label="Video showcasing one of our luxurious saunas in the forest."
+          >
+            <source src="assets/images/happy-sauna-video-1.mp4" />
+          </video>
         </div>
-        <div class="video-inner">
-            <div class="video">
-                <video muted controls aria-label="Video showcasing one of our luxurious saunas next to a river with view of the surrounding area.">
-                    <source src="assets/images/happy-sauna-video-2.mp4">
-                </video>
-            </div>
+      </div>
+      <div class="video-inner">
+        <div class="video">
+          <video
+            muted
+            controls
+            aria-label="Video showcasing one of our luxurious saunas next to a river with view of the surrounding area."
+          >
+            <source src="assets/images/happy-sauna-video-2.mp4" />
+          </video>
         </div>
+      </div>
     </div>
+    </section>
+    <!-- horizontal line that resizes responsively -->
     <div class="hr-container">
-        <hr>
+      <hr />
     </div>
+    <!-- pricing cards outer container -->
     <div class="pricing-container">
-        <!-- Basic Tier -->
-        <div class="pricing-card">
-            <h2>Basic</h2>
-            <p class="price">€29<span>/mo</span></p>
-            <ul>
-                <li>1 Session per Week</li>
-                <li>Access to Common Areas</li>
-                <li>Basic Towel Service</li>
-                <li>No Guest Passes</li>
-            </ul>
-            <a href="form.html"><button>Choose Plan</button></a>
-        </div>
-        <!-- Premium Tier -->
-        <div class="pricing-card">
-            <h2>Premium</h2>
-            <p class="price">€49<span>/mo</span></p>
-            <ul>
-                <li>3 Sessions per Week</li>
-                <li>Access to All Areas</li>
-                <li>Premium Towel Service</li>
-                <li>1 Guest Pass per Month</li>
-            </ul>
-            <a href="form.html"><button>Choose Plan</button></a>
-        </div>
-        <!-- Deluxe Tier -->
-        <div class="pricing-card">
-            <h2>Deluxe</h2>
-            <p class="price">€89<span>/mo</span></p>
-            <ul>
-                <li>Unlimited Sessions</li>
-                <li>Private Sauna Rooms</li>
-                <li>Deluxe Towel & Robe Service</li>
-                <li>2 Guest Passes per Month</li>
-            </ul>
-            <a href="form.html"><button>Choose Plan</button></a>
-        </div>
+      <!-- Basic Tier pricing card-->
+      <div class="pricing-card">
+        <h2>Basic</h2>
+        <p class="price">€29<span>/mo</span></p>
+        <ul>
+          <li>1 Session per Week</li>
+          <li>Access to Common Areas</li>
+          <li>Basic Towel Service</li>
+          <li>No Guest Passes</li>
+        </ul>
+        <a href="form.html"><button>Choose Plan</button></a>
+      </div>
+      <!-- Premium Tier -->
+      <div class="pricing-card">
+        <h2>Premium</h2>
+        <p class="price">€49<span>/mo</span></p>
+        <ul>
+          <li>3 Sessions per Week</li>
+          <li>Access to All Areas</li>
+          <li>Premium Towel Service</li>
+          <li>1 Guest Pass per Month</li>
+        </ul>
+        <a href="form.html"><button>Choose Plan</button></a>
+      </div>
+      <!-- Deluxe Tier -->
+      <div class="pricing-card">
+        <h2>Deluxe</h2>
+        <p class="price">€89<span>/mo</span></p>
+        <ul>
+          <li>Unlimited Sessions</li>
+          <li>Private Sauna Rooms</li>
+          <li>Deluxe Towel & Robe Service</li>
+          <li>2 Guest Passes per Month</li>
+        </ul>
+        <a href="form.html"><button>Choose Plan</button></a>
+      </div>
     </div>
+    <!-- horizontal line that resizes responsively -->
     <div class="hr-container">
-        <hr>
+      <hr />
     </div>
+    <!-- Footer with social media links -->
     <footer>
-        <a href="https://www.instagram.com/" target="_blank">
-            <h3><i class="fa-brands fa-square-instagram" style="color: #000000;"></i> FOLLOW US ON INSTAGRAM</h3>
-        </a>
-        <a href="https://twitter.com/" target="_blank">
-            <h3><i class="fa-brands fa-square-x-twitter" style="color: #000000;"></i> FOLLOW US ON TWITTER</h3>
-        </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <h3>
+          <i class="fa-brands fa-square-instagram" style="color: #000000"></i>
+          FOLLOW US ON INSTAGRAM
+        </h3>
+      </a>
+      <a href="https://twitter.com/" target="_blank">
+        <h3>
+          <i class="fa-brands fa-square-x-twitter" style="color: #000000"></i>
+          FOLLOW US ON TWITTER
+        </h3>
+      </a>
     </footer>
-</body>
+  </body>
 </html>
