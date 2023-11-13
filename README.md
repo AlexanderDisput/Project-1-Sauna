@@ -1,36 +1,37 @@
 # Happy Sauna 
 
-[Welcome to the official repository of Happy Sauna, a website dedicated to promoting wellness through sauna experiences. Our website provides users with detailed information on our sauna offerings, pricing plans, health benefits and the opportunity to contact us for more personalized services.]
+Welcome to the official repository of Happy Sauna, a website dedicated to promoting wellness through sauna experiences. 
+Our website provides users with detailed information on our sauna offerings, pricing plans, health benefits and the opportunity to contact us for more personalized services.
 
 # Table of Contents
+### [User Experience](#user-experience)
+[Initial discussion](#initial-discussion)
+[User Stories](#user-stories)
+### [Design](#design)
+[Colour Scheme](#colour-scheme)
+[Typography](#typography)
+[Imagery](#imagery)
+### [Features](#features)
+[Navigation](#navigation)
+[Homepage](#home-page)
+[Pricing Page](#pricing-page)
+[Contact Form](#contact-form)
+[Contact Form](#contact-form)
+### [Technologies Used](#technologies-used)
+[Frameworks and Libraries](#frameworks-libraries--programs-used)
+[Deployment and Local Development](#deployment--local-development)
+[Deployment](#deployment)
+[Local Development](#local-development)
+[How to Fork](#how-to-fork)
+[How to Clone](#how-to-clone)
+### [Testing](#testing)
+[Known Bugs](#known-bugs)
+[Testing User Stories](#testing-user-stories)
+### [Credits](#credits)
 
-## Introduction
-## User Experience UX
-### Initial discussion 
-### User Stories 
-## Design
-### Colour Scheme
-### Typography
-### Imagery
-### Wireframes
-## Features 
-### Navigation 
-### Home Page
-### Pricing Page
-### Contact Form 
-## Accessibility 
-## Technologies Used
-### Frameworks & libraries
-## Deployment & Local Development
-### Deployment 
-### Local Development
-### How to Fork
-### How to Clone
-
-## Introduction
 
 
-## User Experience (UX)
+# User Experience
 
 
 ## Initial Discussion
@@ -137,11 +138,7 @@ Throughout the development process, I have prioritized accessibility to make the
 - Selecting color schemes that provide ample contrast, catering to users with visual impairments.
 - Making navigation intuitive for screen reader users by indicating the active page within the menu structure.
 reference all of the websites where you received 
-
--add testing section ot the readme with images of each page: 
-Add screenshots for wave and lighthouse for mobile and desktop 
-add plenty of screenshots for each of the features 
-add 2 or 3 of the bigger bugs that you have with your website 
+- Adding active page in navigation links for page readers to recognize and relay the information back to the user
 
 
 ## Technologies Used
