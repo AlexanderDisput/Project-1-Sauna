@@ -50,7 +50,7 @@ Our website is designed to be easy to use. We chose colors and pictures that mak
 
 ### Colour Scheme
 - The website uses a simple setup of black, white and grey which matches the luxurious feel of our saunas and fits with the different brown tones of the wood within the images
-![Alt text](<assets/images/colour-palette.png>)
+![Alt text](<readme-files/colour-palette.png>)
 
 The palette was was chosen through testing. 
 ### Typography
@@ -204,7 +204,7 @@ I used Lighthouse to allow me to test the performance, accessibility, best pract
 
 #### Index page
 The results can be seen here: 
-![Alt text](<assets/images/lh-index-page.png>)
+![Alt text](<readme-files/lh-index-page.png>)
 
 Suggestions: 
 - converting the images to .webp 
@@ -218,7 +218,7 @@ Solutions:
 #### Pricing page
 
 The results can be seen here: 
-![Alt text](<assets/images/lh-pricing-page.png>)
+![Alt text](<readme-files/lh-pricing-page.png>)
 
 Suggestions: 
 - avoid enormous network payloads
@@ -231,7 +231,7 @@ Solutions:
 #### Contact Us page
 
 The results can be seen here: 
-![Alt text](<assets/images/lh-form-page.png>)
+![Alt text](<readme-files/lh-form-page.png>)
 
 Suggestions: 
 - image elements do not have explicit width and height
@@ -270,7 +270,7 @@ The homepage should have a clean, elegant design that aligns with the luxury bra
 As I scroll down, the website should utilize a parallax scrolling effect to create a dynamic, engaging experience.
 This effect should be smooth and not disrupt the browsing experience or the loading time of the website.
 
-![Alt text](assets/images/testing1.png)
+![Alt text](readme-files/testing1.png)
 
 #### Sauna Preview and Information Accessibility
 
@@ -278,8 +278,8 @@ As a potential customer, I want to easily view and learn about different sauna m
 Each sauna model should be presented with a high-quality image.
 The 'Learn More' buttons should be easily noticeable and lead to more detailed information.
 
-![Alt text](assets/images/testing2.png)
-![Alt text](assets/images/testing3.png)
+![Alt text](readme-files/testing2.png)
+![Alt text](readme-files/testing3.png)
 
 #### Benefits Section Clarity
 
@@ -287,13 +287,13 @@ As a visitor interested in sauna benefits, I want to easily find and understand 
 The benefits section should be clearly segmented and informative.
 Text should be legible with a user-friendly layout.
 
-![Alt text](assets/images/testing5.png)
+![Alt text](readme-files/testing5.png)
 
 #### Footer and Social Media Accessibility
 
 As a user interested in the brand's social presence, I want to easily find and access their social media links.
 
-![Alt text](assets/images/testing6.png)
+![Alt text](readme-files/testing6.png)
 
 #### Responsive Navigation and Hamburger Icon Functionality
 
@@ -301,7 +301,7 @@ As a mobile user, I want to ensure that the navigation bar is responsive and the
 
 Upon clicking the hamburger icon, the navigation menu should expand and collapse smoothly, showing all the available links.
 
-![Alt text](assets/images/testing12.png)
+![Alt text](readme-files/testing12.png)
 
 #### Navigation Link Underline and Page Identification
 
@@ -309,7 +309,7 @@ As a user navigating through different pages, I want a clear visual indication o
 
 This visual cue should help users easily identify which page they are currently viewing, especially since the parallax banner is similar across different pages.
 
-![Alt text](assets/images/testing7.png)
+![Alt text](readme-files/testing7.png)
 
 #### Video Display and Interaction on Pricing Page
 
@@ -319,7 +319,7 @@ Video quality should be high, providing clear views of both the interior and ext
 
 Controls for the videos should be functional and user-friendly.
 
-![Alt text](assets/images/testing9.png)
+![Alt text](readme-files/testing9.png)
 
 #### Responsive Pricing Cards and Interaction
 
@@ -329,7 +329,7 @@ On hover, each card should scale up slightly, indicating interactivity.
 
 Each card should clearly display the price and have a call-to-action button or link leading to the sign-up form.
 
-![Alt text](assets/images/testing10.png)
+![Alt text](readme-files/testing10.png)
 
 
 #### Form Usability and Functionality
@@ -340,7 +340,7 @@ Interact with each field in the form, including entering text in text fields, se
 
 Submit the form to test its functionality and response.
 
-![Alt text](assets/images/testing11.png)
+![Alt text](readme-files/testing11.png)
 
 
 #### 404 Error Handling and Redirection
@@ -355,8 +355,7 @@ An automatic redirect should take the user back to the homepage or another relev
 
 The page should also include a manual redirect button (e.g., "Return to Home") for users who prefer not to wait for the automatic redirect.
 
-![Alt text](assets/images/testing13.png)
-
+![Alt text](readme-files/testing13.png)
 ## Credits
 
 #### Code used
