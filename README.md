@@ -49,7 +49,7 @@ Our website is designed to be easy to use. We chose colors and pictures that mak
 
 ### Colour Scheme
 - The website uses a simple setup of black, white and grey which matches the luxurious feel of our saunas and fits with the different brown tones of the wood within the images
-![Alt text](<assets/images/Screenshot 2023-11-08 at 15.38.19.png>)
+![Alt text](<assets/images/colour-palette.png>)
 
 The palette was was chosen through testing. 
 ### Typography
@@ -87,6 +87,8 @@ The website is comprised of four pages, three of which are accessible from the n
 
 Source: 
 Was taken from the following video and slightly modified: https://www.youtube.com/watch?v=qzAAiKFfNLo
+
+
 
 ##### Dependencies
 Requires FontAwesome for icons.
@@ -153,7 +155,7 @@ add 2 or 3 of the bigger bugs that you have with your website
 - Github - To save and store the files for the website.
 - Google Fonts - To import the fonts used on the website.
 - Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
-- Convertio.co to convert my images to webp
+- https://convertio.co/ to convert my images to webp
 
 ## Deployment & Local Development
 
@@ -202,3 +204,164 @@ style.css CSS
 
 #### Lighthouse
 I used Lighthouse to allow me to test the performance, accessibility, best practices and SEO of the website.
+
+#### Index page
+The results can be seen here: 
+![Alt text](<assets/images/lh-index-page.png>)
+
+Suggestions: 
+- converting the images to .webp 
+- set fixed dimensions to images 
+
+Solutions:
+- converted images using https://convertio.co/
+- set fixed image sizes to the images, but still receiving the error. Not sure if this is due to the height being auto. That being said, I left the height auto to make sure that they remain as responsive as possible 
+
+
+#### Pricing page
+
+The results can be seen here: 
+![Alt text](<assets/images/lh-pricing-page.png>)
+
+Suggestions: 
+- avoid enormous network payloads
+- image elements do not have explicit width and height
+
+Solutions:
+- tried to host the videos online to reduce the payload, but encountered issues with the recommended videos within the embeded player and also less control over the video itself. As a result, I chose to host the video on github as performance is not a concern in this project
+- unable to find out which image dimensions need to be fixed here as well
+
+#### Contact Us page
+
+The results can be seen here: 
+![Alt text](<assets/images/lh-form-page.png>)
+
+Suggestions: 
+- image elements do not have explicit width and height
+
+Solution:
+- No solution implemented as I cannot set a specific height and width to my background image. This would remove some of its flexibility
+
+
+
+### Known Bugs
+
+- On the index.html page you can see on desktop devices that are wider than 766px will show the first row of the benefits with their center moved slightly to the right. I was unable to find out how to solve this issue, using the same layout within HTML and only changing CSS. 
+
+Possible solution: 
+I believe that solving this issue would require me to make fundamental changes to the way the benefits sections are nested. I chose the current approach to make the responsiveness simpler and easier to control. In future I would leave each benefit on its own and not nest 2 together as that can create all kinds of issues
+
+- On every page, when opening the navigation menu on mobile devices: 
+It will expand the menu from top to bottom and at the same time push the content below farther down. 
+
+Possible solution: 
+I was unable to solve this. What I have tried is to set the position of the .list class to absolute, which made no difference since the absolute positioned elements do not care for other elements, but the parent they are relative to
+
+
+### Testing User stories 
+
+As a first-time visitor to a luxury sauna website, I want to experience a visually engaging and informative introduction to the products, so that I can understand the quality and variety of saunas available, and envision them in different settings.
+
+#### Homepage First Impression
+
+Upon entering the website, I should immediately notice a high-quality image or video of a luxury sauna, possibly in use, to capture my attention and set the tone for the luxury and quality of the product.
+
+The homepage should have a clean, elegant design that aligns with the luxury branding of the saunas.
+
+#### Parallax Scrolling Effect
+
+As I scroll down, the website should utilize a parallax scrolling effect to create a dynamic, engaging experience.
+This effect should be smooth and not disrupt the browsing experience or the loading time of the website.
+
+![Alt text](assets/images/testing1.png)
+
+#### Sauna Preview and Information Accessibility
+
+As a potential customer, I want to easily view and learn about different sauna models, so I can consider various options.
+Each sauna model should be presented with a high-quality image.
+The 'Learn More' buttons should be easily noticeable and lead to more detailed information.
+
+![Alt text](assets/images/testing2.png)
+![Alt text](assets/images/testing3.png)
+
+#### Benefits Section Clarity
+
+As a visitor interested in sauna benefits, I want to easily find and understand the health and wellness benefits of using saunas.
+The benefits section should be clearly segmented and informative.
+Text should be legible with a user-friendly layout.
+
+![Alt text](assets/images/testing5.png)
+
+#### Footer and Social Media Accessibility
+
+As a user interested in the brand's social presence, I want to easily find and access their social media links.
+
+![Alt text](assets/images/testing6.png)
+
+#### Responsive Navigation and Hamburger Icon Functionality
+
+As a mobile user, I want to ensure that the navigation bar is responsive and the hamburger icon functions correctly, for a seamless browsing experience on smaller devices.
+
+Upon clicking the hamburger icon, the navigation menu should expand and collapse smoothly, showing all the available links.
+
+![Alt text](assets/images/testing12.png)
+
+#### Navigation Link Underline and Page Identification
+
+As a user navigating through different pages, I want a clear visual indication of the current page I am on, despite the similar parallax banner across pages.
+
+This visual cue should help users easily identify which page they are currently viewing, especially since the parallax banner is similar across different pages.
+
+![Alt text](assets/images/testing7.png)
+
+#### Video Display and Interaction on Pricing Page
+
+As a potential customer interested in sauna details, I want to view videos showcasing the interior and exterior of the saunas on the pricing page, to better understand what I might be purchasing.
+
+Video quality should be high, providing clear views of both the interior and exterior of the saunas.
+
+Controls for the videos should be functional and user-friendly.
+
+![Alt text](assets/images/testing9.png)
+
+#### Responsive Pricing Cards and Interaction
+
+As a user exploring sauna options, I want to view responsive pricing cards that provide clear pricing information and lead me to a sign-up form.
+
+On hover, each card should scale up slightly, indicating interactivity.
+
+Each card should clearly display the price and have a call-to-action button or link leading to the sign-up form.
+
+![Alt text](assets/images/testing10.png)
+
+
+#### Form Usability and Functionality
+
+As a potential customer interested in sauna subscriptions, I want to easily fill out and submit the contact form to inquire or sign up for services.
+
+Interact with each field in the form, including entering text in text fields, selecting options from dropdown menus, and writing in the text area.
+
+Submit the form to test its functionality and response.
+
+![Alt text](assets/images/testing11.png)
+
+
+#### 404 Error Handling and Redirection
+
+As a user who encounters a 404 error page, I want to be informed that the page I'm looking for doesn't exist and be redirected back to a relevant page, either automatically or through a manual option.
+
+The 404 page should clearly inform that the requested page is not found.
+
+The design of the 404 page should be consistent with the website's branding and not disrupt the user experience.
+
+An automatic redirect should take the user back to the homepage or another relevant page after 10 seconds.
+
+The page should also include a manual redirect button (e.g., "Return to Home") for users who prefer not to wait for the automatic redirect.
+
+![Alt text](assets/images/testing13.png)
+
+## Credits
+
+#### Code used
+[Responsive navigation bar](https://www.youtube.com/watch?v=qzAAiKFfNLo)
+[Pricing cards](https://chat.openai.com/)
